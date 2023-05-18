@@ -6,11 +6,11 @@ public class Program {
 
 	public static void main(String[] args) { // Jogo de  dados
 		
-		/*Faça um programa para gerar 3 números aleatórios para 3 dados, mostre a soma dos números que saíram. 
-		 * Se 2 dados saírem com a mesma numeração o jogador ganha 2 pontos de bônus, 
-		 * Se os 3 dados saírem com a mesma numeração ele ganha 6 pontos de bônus e deve aparecer a mensagem "você é muito sortudo". 
-		 * Se o total da soma dos dados mais o bônus for menor que 15 o jogador perde e apresenta a mensagem "Lamento, mas você perdeu" , 
-		 * Se for maior ou igual a 15 ele ganha e apresenta a mensagem "parabéns, você ganhou!" .
+		/*Fa�a um programa para gerar 3 n�meros aleat�rios para 3 dados, mostre a soma dos n�meros que sa�ram. 
+		 * Se 2 dados sa�rem com a mesma numera��o o jogador ganha 2 pontos de b�nus, 
+		 * Se os 3 dados sa�rem com a mesma numera��o ele ganha 6 pontos de b�nus e deve aparecer a mensagem "voc� � muito sortudo". 
+		 * Se o total da soma dos dados mais o b�nus for menor que 15 o jogador perde e apresenta a mensagem "Lamento, mas voc� perdeu" , 
+		 * Se for maior ou igual a 15 ele ganha e apresenta a mensagem "parab�ns, voc� ganhou!" .
 		*/
 		
 		
@@ -39,9 +39,9 @@ public class Program {
 				System.out.println("você é muito sortudo!!");}
 			if(somaDado + saldoBonus < 15) {
 				System.out.println();
-				System.out.println("Soma dos Dados + Saldo de Bonus: "+(somaDado+saldoBonus+" é MENOR que 15 :("));
+				System.out.println("Soma dos Dados + Saldo de Bônus: "+(somaDado+saldoBonus+" é MENOR que 15 :("));
 				System.out.println();
-				System.out.println("Lamento, mas você perdeu!   *Saldo Bonus: "+saldoBonus);
+				System.out.println("Lamento, mas voc� perdeu!   *Saldo Bonus: "+saldoBonus);
 			}else if(somaDado + saldoBonus == 15) {{
 				System.out.println();
 				System.out.println("Parabéns, Ganhou!!");
@@ -54,12 +54,7 @@ public class Program {
 			System.out.println("Parabéns, Ganhou!!");
 			System.out.println();
 			System.out.println("Soma dos Dados + Saldo de Bonus: "+(somaDado+saldoBonus+" é MAIOR que 15 :D"));
-			
-			if (somaDado <= 0) {
 				
-			System.out.println(somaDado+" não é um número inteiro!!");	
-		
-			}//if	
 	}//else
 }//void main
 }//Program
