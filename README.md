@@ -1,3 +1,3 @@
-# Switch-Case-e-Randon
+# _Switch-Case-e-Randon_
 
-### Jogo de Dados
+## Atividade Jogo de Dados
