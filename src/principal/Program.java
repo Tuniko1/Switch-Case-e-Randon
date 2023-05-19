@@ -16,9 +16,9 @@ public class Program {
 		
 		Random randon = new Random();
 		
-		int op = randon.nextInt(10);
-		int op2 = randon.nextInt(10);
-		int op3 = randon.nextInt(10);
+		int op = randon.nextInt(2);
+		int op2 = randon.nextInt(2);
+		int op3 = randon.nextInt(2);
 		
 		int bonus = 0;
 		int saldoBonus = 0;
@@ -31,29 +31,33 @@ public class Program {
 		
 		 
 			if (op == op2 || op == op3 || op2 == op3) {
-				saldoBonus = bonus + 2;
-			System.out.println("Você ganhou 2 pontos pelos dados iguais, seu saldo de Bônus é: +"+saldoBonus+" PONTOS");	
-			}
-			if(op == op2 && op == op2 && op2 == op3) {
+				if(op == op2 && op2 == op3 && op2 == op3) {
+				System.out.println("Você ganhou 6 pontos pelos dados iguais!!");
 				saldoBonus = saldoBonus + 6;
-				System.out.println("você é muito sortudo!!");}
+				System.out.println("você é muito sortudo!!");	
+			}else {
+				saldoBonus = bonus + 2;
+				System.out.println("Você ganhou mais 2 pontos pelos dados iguais!!");
+				}}			
 			if(somaDado + saldoBonus < 15) {
 				System.out.println();
-				System.out.println("Soma dos Dados + Saldo de Bônus: "+(somaDado+saldoBonus+" é MENOR que 15 :("));
+				System.out.println("Total: "+(somaDado+saldoBonus+" é MENOR que 15 :("));
 				System.out.println();
-				System.out.println("Lamento, mas você perdeu!   *Saldo de Bônus: "+saldoBonus);
-			}else if(somaDado + saldoBonus == 15) {{
+				System.out.println("Lamento, mas você perdeu!   (Saldo de Bônus: "+saldoBonus+")");
+			}
+			else if(somaDado + saldoBonus == 15) {
 				System.out.println();
 				System.out.println("Parabéns, Ganhou!!");
 				System.out.println();
-				System.out.println("Soma dos Dados + Saldo de Bonus: "+(somaDado+saldoBonus+" é IGUAL a 15 :D"));
-				}
-			}else {
+				System.out.println("Total :"+(somaDado+saldoBonus+" é IGUAL a 15 :D"));
+				
+			}
+			else {
 			System.out.println();
 			System.out.println("Parabéns, Ganhou!!");
 			System.out.println();
 			System.out.println("Soma dos Dados + Saldo de Bonus: "+(somaDado+saldoBonus+" é MAIOR que 15 :D"));
 				
-	}//else
+			}//else
 }//void main
 }//Program
